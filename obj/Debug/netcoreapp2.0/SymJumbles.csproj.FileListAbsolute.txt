@@ -1,0 +1,11 @@
+C:\Projects\SymJumbles\obj\Debug\netcoreapp2.0\SymJumbles.csprojAssemblyReference.cache
+C:\Projects\SymJumbles\obj\Debug\netcoreapp2.0\SymJumbles.csproj.CoreCompileInputs.cache
+C:\Projects\SymJumbles\obj\Debug\netcoreapp2.0\SymJumbles.AssemblyInfoInputs.cache
+C:\Projects\SymJumbles\obj\Debug\netcoreapp2.0\SymJumbles.AssemblyInfo.cs
+C:\Projects\SymJumbles\bin\Debug\netcoreapp2.0\SymJumbles.deps.json
+C:\Projects\SymJumbles\bin\Debug\netcoreapp2.0\SymJumbles.runtimeconfig.json
+C:\Projects\SymJumbles\bin\Debug\netcoreapp2.0\SymJumbles.runtimeconfig.dev.json
+C:\Projects\SymJumbles\bin\Debug\netcoreapp2.0\SymJumbles.dll
+C:\Projects\SymJumbles\bin\Debug\netcoreapp2.0\SymJumbles.pdb
+C:\Projects\SymJumbles\obj\Debug\netcoreapp2.0\SymJumbles.dll
+C:\Projects\SymJumbles\obj\Debug\netcoreapp2.0\SymJumbles.pdb

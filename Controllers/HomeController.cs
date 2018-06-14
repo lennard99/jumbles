@@ -4,9 +4,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using myApp1.Models;
+using SymJumbles.Models;
 
-namespace myApp1.Controllers
+namespace SymJumbles.Controllers
 {
     public class HomeController : Controller
     {
@@ -15,13 +15,12 @@ namespace myApp1.Controllers
             return View();
         }
 
-        /*
-         * public IActionResult About()
+        public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
 
             return View();
-        } */
+        }
 
         public IActionResult Contact()
         {

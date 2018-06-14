@@ -4,12 +4,13 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using myApp1.Models;
+using SymJumbles.Models;
 
-namespace myApp1.Controllers
+namespace SymJumbles.Controllers
 {
     public class WelcomeController : Controller
     {
+        
         // GET: /Welcome/
         public IActionResult Index()
         {

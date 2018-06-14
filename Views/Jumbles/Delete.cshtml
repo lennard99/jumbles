@@ -1,11 +1,9 @@
-@model MyApp1.Models.Jumble
+@model SymJumbles.Models.Jumble
 
 @{
     ViewData["Title"] = "Delete";
 }
-
 <h2>Delete</h2>
-
 <h3>Are you sure you want to delete this?</h3>
 <div>
     <h4>Jumble</h4>
@@ -42,7 +40,7 @@
             @Html.DisplayFor(model => model.TimeStamp)
         </dd>
     </dl>
-    
+
     <form asp-action="Delete">
         <input type="hidden" asp-for="ID" />
         <input type="submit" value="Delete" class="btn btn-default" /> |

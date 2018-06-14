@@ -5,47 +5,24 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using MyApp1.Models;
+using SymJumbles.Models;
 
 using Twilio;
 using Twilio.AspNet.Mvc;
 using Twilio.TwiML;
 
-namespace myApp1.Controllers
-{
+namespace SymJumbles.Controllers
+{    
+
     public class JumblesController : Controller
     {
-        private readonly MyApp1Context _context;
-
-        public JumblesController(MyApp1Context context)
+        private readonly SymJumblesContext _context;
+        
+        public JumblesController(SymJumblesContext context)
         {
             _context = context;
-        }
-        
-        // GET: Jumbles/Api        
-        [HttpPost]        
-        public async Task<IActionResult> Api([Bind("From, To, Body, AccountSid")] IncomingMessage incomingMessage)
-        {
-            
-
-            /*
-            if (From != null && Body != null) {
-                Console.WriteLine(From);
-                Console.WriteLine(Body);
-                // new message response instance
-                var twiml = new MessagingResponse();
-                twiml.Message($"Hello {From}. You said {Body}");
-                Console.WriteLine(twiml.ToString());
-                //return twiml.ToString();
-            } else {
-                Console.WriteLine("-");
-            }
-            */
-            ViewData["Message"] = incomingMessage.Body; // "Sample response.";
-                        
-            return View();
-        }
-            
+        }      
+       
 
         // GET: Jumbles
         public async Task<IActionResult> Index()

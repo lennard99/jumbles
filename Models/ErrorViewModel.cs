@@ -1,6 +1,6 @@
 using System;
 
-namespace myApp1.Models
+namespace SymJumbles.Models
 {
     public class ErrorViewModel
     {

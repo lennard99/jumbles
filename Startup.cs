@@ -6,10 +6,11 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.EntityFrameworkCore;
-using MyApp1.Models;
 
-namespace myApp1
+using Microsoft.EntityFrameworkCore;
+using SymJumbles.Models;
+
+namespace SymJumbles
 {
     public class Startup
     {
@@ -23,10 +24,11 @@ namespace myApp1
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            
+            services.AddDbContext<SymJumblesContext>(options =>
+                  options.UseSqlite("Data Source=SymJumbles.db"));
+            
             services.AddMvc();
-
-            services.AddDbContext<MyApp1Context>(options =>
-                  options.UseSqlite("Data Source=MyApp1.db"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

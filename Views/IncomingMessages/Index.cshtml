@@ -1,0 +1,141 @@
+@model IEnumerable<SymJumbles.Models.IncomingMessage>
+    @{
+    ViewData["Message"] = "Recorded Data from Incoming API Calls via Twilio";
+    }
+    <h2>Index</h2>
+    <h3>@ViewData["Message"]</h3>
+    <!--<p>
+            <a asp-action="Create">Create New</a>
+        </p>-->
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.From)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.To)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Body)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.AccountSid)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ToCountry)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ToState)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SmsMessageSid)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NumMedia)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ToCity)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FromZip)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SmsSid)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FromState)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SmsStatus)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FromCity)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FromCountry)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ToZip)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.NumSegments)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MessageSid)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.ApiVersion)
+                </th>
+                <!--<th></th>-->
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model) {            
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.From)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.To)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Body)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AccountSid)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ToCountry)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ToState)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SmsMessageSid)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NumMedia)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ToCity)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FromZip)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SmsSid)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FromState)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SmsStatus)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FromCity)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FromCountry)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ToZip)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.NumSegments)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MessageSid)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ApiVersion)
+                </td>
+                <td>
+        <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
+        <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
+        <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
+    </td>
+            </tr>
+}
+        </tbody>
+    </table>
